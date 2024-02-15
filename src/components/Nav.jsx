@@ -19,10 +19,10 @@ export default function Nav() {
     setIsNavOpen(false);
   }
   return (
-    <nav className={` fixed top-0 bg-white dark:bg-black nav ${isNavOpen ? "active":""} border-b dark:border-gray-500 flex h-20  justify-around w-screen items-center px-3`}>
+    <nav className={` fixed top-0 border-t bg-white dark:bg-black nav ${isNavOpen ? "active":""} border-b dark:border-gray-500 flex h-20  justify-around w-screen items-center px-3`}>
     <div className=" h-20 flex w-screen logo_ham sm:max-auto md:w-auto justify-around items-center">
     <div className="tracking-wider text-3xl font-extrabold">
-         <Link href="/" className={`${roboto.className} logo transition-all `}>Coder.Pro</Link>
+         <Link href="/" className={`${roboto.className} logo transition-all text-white serif`}>Code Insta</Link>
      </div>
      <div className="flex items-center justify-center gap-x-2">
      <div className={`${isNavOpen ? "active":""} hamburger cursor-pointer md:hidden`} onClick={OpenNav}>
