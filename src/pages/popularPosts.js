@@ -38,7 +38,7 @@ export default function PopularPost({data}) {
   return (
     <div className={`${poppins.className} pt-5 items-center justify-items-center grid-cols-2 grid content-center md:grid md:grid-cols-2 lg:grid-cols-4 gap-y-6 gap-x-3`}>
       {data.map((post_item)=>(
-        <Post id={post_item.key} title={post_item.title} content={post_item.content} />
+        <Post key={post_item.id} title={post_item.title} content={post_item.content} />
       ))}
     </div>
   )
