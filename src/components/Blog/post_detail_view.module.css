@@ -1,5 +1,8 @@
 .content h2{
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
     font-weight: bolder;
+}
+.content p{
+    font-size: 1.2rem;
 }
