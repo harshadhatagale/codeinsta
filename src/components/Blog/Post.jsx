@@ -1,5 +1,4 @@
 import React from 'react'
-import blog_thumb from "../../../public/blog_thumb.jpg"
 import Image from 'next/image'
 import Link from 'next/link'
 import code from "../../../public/code.jpg"
