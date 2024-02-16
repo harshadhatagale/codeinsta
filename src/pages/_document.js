@@ -5,6 +5,8 @@ export default function Document() {
     <Html lang="en">
       <title>Code Insta</title>
       <meta name="google-adsense-account" content="ca-pub-3944085814863048"></meta>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3944085814863048"
+     crossorigin="anonymous"></script>
       <Head />
       <body  className="dark:bg-black white dark:text-white text-black">
         <Main />
