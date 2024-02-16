@@ -35,10 +35,10 @@ export async function getStaticProps(){
   }
 }
 export default function LatestPost({ data }) {
-  console.log(data)
+
   return (
     <>
-    <div className={`${poppins.className} pt-5 items-center justify-items-center grid-cols-2 grid content-center md:grid md:grid-cols-2 lg:grid-cols-4 gap-y-6 gap-x-3`}>
+    <div className={`${poppins.className} items-center justify-items-center grid-cols-2 pb-5 grid content-center md:grid md:grid-cols-2 lg:grid-cols-4 gap-y-6 gap-x-3`}>
       {data.map((post_item)=>(
         <Post key={post_item.id} title={post_item.title} content={post_item.content} />
       ))}
