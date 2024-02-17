@@ -1,4 +1,7 @@
-
+.content ol{
+    list-style: lower-roman;
+    padding-left: 1em;
+}
 .content pre{
     padding: 1em;
     border-radius: 1em;
@@ -15,4 +18,7 @@
     margin-top: 2em;
     margin-bottom: 2em;
     border-radius: 1em;
+}
+.content{
+    line-height: 1.5em;
 }
