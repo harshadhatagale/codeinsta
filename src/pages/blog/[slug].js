@@ -5,6 +5,7 @@ import ReactMarkdown from "react-markdown"
 import styles from "../../styles/post_detail_view.module.css"
 import Header2 from '@/components/header2';
 import { Merriweather } from 'next/font/google';
+import Head from "next/head"
 const merry= Merriweather({
   subsets:["latin"],
   weight:["300","400","700","900"]
@@ -18,6 +19,9 @@ export default function DetailPostView({ post }) {
   }
   return (
     <>
+    <Head>
+      <title>{post.slug.replace(".md","")}</title>
+    </Head>
       <div className={styles.content}>
         <Header2 content= {post.slug.replace(".md","")} />
         <ReactMarkdown className={`${merry.className} text-md md:text-lg lg:text-xl`}>
