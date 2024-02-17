@@ -2,15 +2,9 @@ import React, { useState } from 'react'
 import { useRouter } from 'next/router';
 import { getPostByslug, getPostSlugs } from '../../../utils/fetchPosts';
 import ReactMarkdown from "react-markdown"
-import styles from "../../components/Blog/post_detail_view.module.css"
+import styles from "../../styles/post_detail_view.module.css"
 import Header2 from '@/components/header2';
-import code from "../../../public/code.jpg"
-import Image from 'next/image';
 import { Merriweather } from 'next/font/google';
-
-
-
-
 const merry= Merriweather({
   subsets:["latin"],
   weight:["300","400","700","900"]
@@ -24,9 +18,11 @@ export default function DetailPostView({ post }) {
   }
   return (
     <>
-      <div className={` px-5 md:px-8 lg:px-8`}>
-        <Header2 content={post.slug.replace(".md", "")}/>
-        <ReactMarkdown className={`${merry.className} ${styles.content}`}>{post.content}</ReactMarkdown>
+      <div className={styles.content}>
+        <Header2 content= {post.slug.replace(".md","")} />
+        <ReactMarkdown className={`${merry.className} text-md md:text-lg lg:text-xl`}>
+          {post.content}
+        </ReactMarkdown>
       </div>
     </>
   )

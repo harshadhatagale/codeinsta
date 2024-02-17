@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Post from '@/components/Blog/Post';
 import { getPostSlugs, getPostByslug } from '../../../utils/fetchPosts'
 import { Poppins } from 'next/font/google'
