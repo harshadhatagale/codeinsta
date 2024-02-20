@@ -5,6 +5,8 @@ import ReactMarkdown from "react-markdown"
 import styles from "../../styles/post_detail_view.module.css"
 import Header2 from '@/components/header2';
 import { Merriweather } from 'next/font/google';
+import rehypeHighlight from 'rehype-highlight';
+import "highlight.js/styles/a11y-dark.css"
 import Head from "next/head"
 const merry= Merriweather({
   subsets:["latin"],
@@ -24,9 +26,7 @@ export default function DetailPostView({ post }) {
     </Head>
       <div className={styles.content}>
         <Header2 content= {post.slug.replace(".md","")} />
-        <ReactMarkdown className={`${merry.className} text-md md:text-lg lg:text-xl`}>
-          {post.content}
-        </ReactMarkdown>
+       <ReactMarkdown rehypePlugins={rehypeHighlight}>{post.content}</ReactMarkdown>
       </div>
     </>
   )
