@@ -1,23 +1,14 @@
-.content ol{
-    list-style: lower-roman;
-    padding-left: 1em;
-}
-.content pre{
-    border-radius: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    background-color: rgb(49, 50, 48);
-    margin-top: 2em;
-    margin-bottom: 2em;
-    overflow: hidden;
-    overflow-x: scroll;
-}
+
+
 .content img{
     margin-top: 2em;
     margin-bottom: 2em;
     border-radius: 1em;
+    border: 1px solid grey;
 }
-.content{
-    line-height: 1.5em;
+.content ol{
+    list-style-type: decimal;
+}
+.content pre code{
+    border-radius: 1em;
 }

@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import { useRouter } from 'next/router';
 import { getPostByslug, getPostSlugs } from '../../../utils/fetchPosts';
 import ReactMarkdown from "react-markdown"
-import styles from "../../styles/post_detail_view.module.css"
 import Header2 from '@/components/header2';
 import { Merriweather } from 'next/font/google';
 import rehypeHighlight from 'rehype-highlight';
 import "highlight.js/styles/dracula.css"
+import styles from "../../styles/post_detail_view.module.css"
 import Head from "next/head"
 const merry= Merriweather({
   subsets:["latin"],
@@ -24,10 +24,12 @@ export default function DetailPostView({ post }) {
      <Head>
       <title>{post.slug.replace(".md","")}</title>
     </Head>
-    <div className="lg:px-20 md:px-18 px-5">
-    <div className={styles.content}>
+    <div className=" dark:text-white lg:text-lg leading-loose lg:px-20 md:px-18 px-5">
+    <div>
        <Header2 content= {post.slug.replace(".md","")} />
-       <ReactMarkdown rehypePlugins={rehypeHighlight}>{post.content}</ReactMarkdown>
+       <div className={styles.content}>
+         <ReactMarkdown rehypePlugins={rehypeHighlight} className={merry.className}>{post.content}</ReactMarkdown>
+       </div>
       </div>
     </div>
     </>

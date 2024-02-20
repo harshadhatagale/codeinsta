@@ -24,3 +24,6 @@
     -webkit-background-clip: text;
     font-family: serif;
 }
+.content{
+    background: blue;
+}
