@@ -24,7 +24,7 @@ export default function DetailPostView({ post }) {
      <Head>
       <title>{post.slug.replace(".md","")}</title>
     </Head>
-    <div className="lg:px-20 md:px-18 px-10">
+    <div className="lg:px-20 md:px-18 px-5">
     <div className={styles.content}>
        <Header2 content= {post.slug.replace(".md","")} />
        <ReactMarkdown rehypePlugins={rehypeHighlight}>{post.content}</ReactMarkdown>
