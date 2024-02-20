@@ -6,7 +6,7 @@ import styles from "../../styles/post_detail_view.module.css"
 import Header2 from '@/components/header2';
 import { Merriweather } from 'next/font/google';
 import rehypeHighlight from 'rehype-highlight';
-import "highlight.js/styles/a11y-dark.css"
+import "highlight.js/styles/dracula.css"
 import Head from "next/head"
 const merry= Merriweather({
   subsets:["latin"],
@@ -21,13 +21,15 @@ export default function DetailPostView({ post }) {
   }
   return (
     <>
-    <Head>
+     <Head>
       <title>{post.slug.replace(".md","")}</title>
     </Head>
-      <div className={styles.content}>
-        <Header2 content= {post.slug.replace(".md","")} />
+    <div className="lg:px-20 md:px-18 px-10">
+    <div className={styles.content}>
+       <Header2 content= {post.slug.replace(".md","")} />
        <ReactMarkdown rehypePlugins={rehypeHighlight}>{post.content}</ReactMarkdown>
       </div>
+    </div>
     </>
   )
 }
