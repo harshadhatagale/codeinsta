@@ -4,9 +4,16 @@ export default function Document() {
   return (
     <Html lang="en">
       <title>Code Insta</title>
-      <meta name="google-adsense-account" content="ca-pub-3944085814863048"></meta>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-YF8ZZVMNVE"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-YF8ZZVMNVE');
+      </script>
       <Head />
-      <body  className="dark:bg-black white dark:text-white text-black">
+      <body className="dark:bg-black white dark:text-white text-black">
         <Main />
         <NextScript />
       </body>

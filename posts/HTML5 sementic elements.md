@@ -1,3 +1,9 @@
+---
+title:  Understanding HTML Button Onclick attribute
+date: 19 Aug 2024
+thumbnail: /semantic_tags_thumbnail.jpg
+---
+
 HTML5 semantic elements provides a clearer structure for a web documents. Here are some semantic elements:
 1. <header> : This tag is used for adding header to page or section.
 for example:

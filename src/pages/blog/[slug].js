@@ -26,7 +26,7 @@ export default function DetailPostView({ post }) {
     </Head>
     <div className=" dark:text-white lg:text-lg leading-loose lg:px-20 md:px-18 px-5">
     <div>
-       <Header2 content= {post.slug.replace(".md","")} />
+       <Header2 content= {post.slug.replace(".md","")} thumbnail={post.thumbnail} date={post.date} />
        <div className={styles.content}>
          <ReactMarkdown rehypePlugins={rehypeHighlight} className={merry.className}>{post.content}</ReactMarkdown>
        </div>

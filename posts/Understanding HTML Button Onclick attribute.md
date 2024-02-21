@@ -1,3 +1,8 @@
+---
+title:  Understanding HTML Button Onclick attribute
+date: 21 Aug 2024
+thumbnail: /button_onclick_thumb.png
+---
 
 &nbsp;&nbsp;&nbsp; In the dynamic world of web development, the HTML button element plays a important role in enhancing user interactivity. One powerful attribute that adds a layer of dynamism is onclick. In this blog post, we'll dive into the intricacies of the HTML button onclick attribute, exploring its syntax, use cases, and how it empowers developers to create interactive and engaging web experiences.
 
