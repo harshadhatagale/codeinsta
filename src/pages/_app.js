@@ -1,15 +1,24 @@
 import "@/styles/globals.css";
+import Head from "next/head";
 import Layout from "@/components/Layout";
-import ReactGa from "react-ga"
-import { useRouter } from "next/router";
-import { useEffect } from "react";
 export default function App({ Component, pageProps }) {
-  ReactGa.initialize("G-13LE94MTNH")
   return (
-    <Layout>
-      <main>
-      <Component {...pageProps} />
-      </main>
-    </Layout>
+    <>
+    <Head>
+      <script
+      dangerouslySetInnerHTML={{
+        __html:`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W97JL5XZ');`,
+      }}
+       />
+    </Head>
+      <Layout>
+        <main>
+          <Component {...pageProps} />
+        </main>
+      </Layout></>
   );
 }
