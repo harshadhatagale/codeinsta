@@ -33,6 +33,7 @@
     "remark-parse": "^11.0.0",
     "remark-react": "^9.0.1",
     "remark-slug": "^7.0.1",
+    "sitemap": "^7.1.1",
     "unified": "^11.0.4"
   },
   "devDependencies": {
