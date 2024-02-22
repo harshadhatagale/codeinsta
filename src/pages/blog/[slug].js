@@ -3,13 +3,11 @@ import { useRouter } from 'next/router';
 import { getPostByslug, getPostSlugs } from '../../../utils/fetchPosts';
 import ReactMarkdown from "react-markdown"
 import Header2 from '@/components/header2';
-import remarkHeadingId from 'remark-heading-id';
 import { Merriweather } from 'next/font/google';
 import rehypeHighlight from 'rehype-highlight';
 import "highlight.js/styles/dracula.css"
 import styles from "../../styles/post_detail_view.module.css"
 import Head from "next/head"
-import TableOfContents from '@/components/Blog/TableOfContents';
 const merry= Merriweather({
   subsets:["latin"],
   weight:["300","400","700","900"]
