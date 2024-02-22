@@ -1,0 +1,2 @@
+user-agent: *
+Sitemap: https://codeinsta.vercel.app/sitemap.xml
