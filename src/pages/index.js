@@ -2,7 +2,7 @@
 import Header from "@/components/header1";
 import LatestPost from "./latestPosts";
 import PopularPost from "@/pages/popularPosts";
-import { Head } from "next/document";
+import { Head } from "next/head";
 export default function Home() {
   return (
     <>
