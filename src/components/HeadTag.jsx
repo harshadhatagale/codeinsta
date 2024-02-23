@@ -4,7 +4,8 @@ export default function HeadTag(props) {
   return (
     <Head>
         <title>{props.title}</title>
-        <meta name="description" content={props.description} />
+        <meta name="description" content={props.description}/>
+        <link rel="canonical" href={props.canUrl}  />
     </Head>
   )
 }
