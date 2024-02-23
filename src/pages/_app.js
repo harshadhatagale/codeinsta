@@ -5,6 +5,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
+      <meta name="google-site-verification" content="cC14gQ_L4efyo09WY__vfk659sty_bFqlShlO3Z1OyY" />
 <script dangerouslySetInnerHTML={{
   __html:`
   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
