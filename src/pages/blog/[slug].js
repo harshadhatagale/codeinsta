@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useRouter } from 'next/router';
 import { getPostByslug, getPostSlugs } from '../../../utils/fetchPosts';
 import ReactMarkdown from "react-markdown"
@@ -7,7 +7,6 @@ import { Merriweather } from 'next/font/google';
 import rehypeHighlight from 'rehype-highlight';
 import "highlight.js/styles/dracula.css"
 import styles from "../../styles/post_detail_view.module.css"
-import Head from "next/head"
 import HeadTag from '@/components/HeadTag';
 
 
