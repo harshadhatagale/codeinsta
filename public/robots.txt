@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /private/
 Disallow: /secret/
-Sitemap: https://codeinsta.vercel.app/sitemap.xml
+Sitemap:https://www.codeinsta.tech/sitemap.xml
