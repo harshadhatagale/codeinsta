@@ -1,12 +1,13 @@
 import "@/styles/globals.css";
 import Head from "next/head";
 import Layout from "@/components/Layout";
+import Script from "next/script";
 export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-D27GE94RQC"></script>
-        <script dangerouslySetInnerHTML={{
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-D27GE94RQC"></Script>
+        <Script dangerouslySetInnerHTML={{
           __html: `
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -15,7 +16,7 @@ export default function App({ Component, pageProps }) {
   gtag('config', 'G-D27GE94RQC');
   `
         }} />
-        <script
+        <Script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
